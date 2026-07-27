@@ -52,33 +52,106 @@
 
   <main class="bg-dark text-light">
     <section class="hero py-5">
-      <div class="container mx-auto">
-        <div class="d-flex flex-column justify-content-center align-items-center gap-4">
-          <div class="image-wrapper border  border-5 border-primary rounded-circle">
-            <img class="rounded-circle mx-auto" src="./assets/img/tasneemJarrar.png" alt="Tasneem Jarrar Portfolio image">
-          </div>
-          <div class="info d-flex flex-column justify-content-center align-items-center">
-            <p class="developer-font">Tasneem Jarrar</p>
-            <p class="developer-font text-primary">FRONTEND DEVELOPER | BUILDING CLEAN, FUNCTIONAL WEB EXPERIENCES</p>
-          </div>
-          <div class="description text-center">
-            <p>I specialize in building robust, scalable applications using modern web technologies.
-              With a focus on performance and precision engineering, I turn complex technical
-              challenges into elegant, user-centric digital products.</p>
-          </div>
-          <div class="actions developer-font d-flex gap-4 justify-content-center align-items-center flex-md-row flex-column ">
-            <a href="#projects" class="btn btn-primary d-flex gap-1 ">View Projects
-              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-                <path d="M0 0h24v24H0z" fill="none" />
-                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                  stroke-width="1.5" d="M4 12h16m0 0l-6-6m6 6l-6 6" />
-              </svg>
-            </a>
-            <a href="#contact" class="btn btn-outline-light">Contact Me</a>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-12">
+            <div class="d-flex flex-column justify-content-center align-items-center gap-4">
+              <div class="info d-flex flex-column justify-content-center align-items-center">
+                <p class="developer-font">Tasneem Jarrar</p>
+                <a href="https://github.com/whiteSHADOW1234/TypingSVG"><img
+                    src="https://typingsvg.vercel.app/api/svg?width=454&height=50&backgroundColor=%23212529&backgroundOpacity=0&center=true&border=false&deletionBehavior=clear&lines=%5B%7B%22text%22%3A%22FRONTEND+DEVELOPER+%22%2C%22font%22%3A%22JetBrains+Mono%22%2C%22color%22%3A%22%230dcaf0%22%2C%22fontSize%22%3A16%7D%2C%7B%22text%22%3A%22BUILDING+CLEAN%2C+FUNCTIONAL+WEB+EXPERIENCES%22%2C%22font%22%3A%22JetBrains+Mono%22%2C%22color%22%3A%22%230dcaf0%22%2C%22fontSize%22%3A17%7D%5D"
+                    alt="Typing SVG" /></a>
+              </div>
+              <div class="description text-center">
+                <p>I specialize in building robust, scalable applications using modern web technologies.
+                  With a focus on performance and precision engineering, I turn complex technical
+                  challenges into elegant, user-centric digital products.</p>
+              </div>
+              <div
+                class="actions developer-font d-flex gap-4 justify-content-center align-items-center flex-md-row flex-column ">
+                <a href="#projects" class="btn btn-info d-flex gap-1 ">View Projects
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="1.5" d="M4 12h16m0 0l-6-6m6 6l-6 6" />
+                  </svg>
+                </a>
+                <a href="#contact" class="btn btn-outline-light">Contact Me</a>
+              </div>
+            </div>
           </div>
 
+          <div class="col-md-6 col-12 p-5">
+            <div class="terminal p-1 bg-black border border-1 border-light rounded-4">
+              <div class="terminal-titlebar rounded-top-3 px-3 py-2 bg-dark d-flex justify-content-between align-items-center">
+                <div class="terminal-titlebar__controlers d-flex gap-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem" viewBox="0 0 32 32">
+                    <path d="M0 0h32v32H0z" fill="none" />
+                    <path fill="#F8312F" d="M30 16c0 7.732-6.268 14-14 14S2 23.732 2 16S8.268 2 16 2s14 6.268 14 14" />
+                  </svg>
+
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem" viewBox="0 0 32 32">
+                    <path d="M0 0h32v32H0z" fill="none" />
+                    <path fill="#FCD53F" d="M30 16c0 7.732-6.268 14-14 14S2 23.732 2 16S8.268 2 16 2s14 6.268 14 14" />
+                  </svg>
+
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem" viewBox="0 0 32 32">
+                    <path d="M0 0h32v32H0z" fill="none" />
+                    <path fill="#00D26A" d="M30 16c0 7.732-6.268 14-14 14S2 23.732 2 16S8.268 2 16 2s14 6.268 14 14" />
+                  </svg>
+                </div>
+                <div class="terminal-titlebar__filename">
+                  <span class="developer-font small">tasneem-profile.js</span>
+                </div>
+              </div>
+              <div class="terminal-body d-flex flex-column gap-1 p-4 small">
+                <div class="terminal-line d-flex gap-4">
+                  <span class="line-number muted">1</span>
+                  <span class="line-code d-flex gap-2"><span class="text-success">const</span> <span
+                      class="text-info">developer</span> = {</span>
+                </div>
+
+                <div class="terminal-line d-flex gap-4">
+                  <span class="line-number muted">2</span>
+                  <span class="line-code d-flex gap-2">name:  <span
+                      class="text-danger-subtle">"Tasneem Jarrar"</span> ,</span>
+                </div>
+
+                <div class="terminal-line d-flex gap-4">
+                  <span class="line-number muted">3</span>
+                  <span class="line-code d-flex gap-2">role:  <span
+                      class="text-danger-subtle">"Frontend Developer"</span> ,</span>
+                </div>
+
+                <div class="terminal-line d-flex gap-4">
+                  <span class="line-number muted">4</span>
+                  <span class="line-code d-flex gap-2">location:  <span
+                      class="text-danger-subtle">"Palestine"</span> ,</span>
+                </div>
+
+                <div class="terminal-line d-flex gap-4">
+                  <span class="line-number muted">5</span>
+                  <span class="line-code d-flex gap-2">status:  <span
+                      class="text-success">"available_for_hire"</span></span>
+                </div>
+
+                <div class="terminal-line d-flex gap-4">
+                  <span class="line-number muted">6</span>
+                  <span class="line-code">};</span>
+                </div>
+
+                <div class="terminal-line d-flex gap-4">
+                  <span class="line-number muted">7</span>
+                  <span class="line-code">// Tasneem is currently pushing to main...</span>
+                </div>
+                
+              </div>
+
+
+
+            </div>
+          </div>
         </div>
-      </div>
     </section>
 
     <section class="about">

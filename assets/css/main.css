@@ -12,7 +12,10 @@ body{
   font-family: "JetBrains Mono", monospace;
 }
 
-.hero .image-wrapper img{
-  width: 200px;
-  height: 200px;
+.text-danger-subtle{
+ color: #f7b9be;
+}
+
+.muted{
+  color: #86878a;
 }
