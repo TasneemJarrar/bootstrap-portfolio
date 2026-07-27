@@ -11,3 +11,8 @@ body{
 .developer-font{
   font-family: "JetBrains Mono", monospace;
 }
+
+.hero .image-wrapper img{
+  width: 200px;
+  height: 200px;
+}
