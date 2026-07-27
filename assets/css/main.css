@@ -1,21 +1,52 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   font-family: "Inter", sans-serif;
 }
 
-.developer-font{
+.developer-font {
   font-family: "JetBrains Mono", monospace;
 }
 
-.text-danger-subtle{
- color: #f7b9be;
+.text-danger-subtle {
+  color: #f7b9be;
 }
 
-.muted{
+.muted {
   color: #86878a;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  right: 0;
+  width: 70%;
+  height: 0.5px;
+  background-color: #eeeeee7d;
+}
+
+@media screen and (min-width: 992px) {
+  .section-title::after {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-title::after {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .section-title::after {
+    width: 80%;
+  }
+}
+.bg-skills {
+  background-color: #30363d67;
 }
