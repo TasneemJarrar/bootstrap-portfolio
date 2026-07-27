@@ -54,3 +54,40 @@ body {
 .fs-10{
   font-size: 10px;
 }
+
+.form-wrapper{
+  max-width: 768px;
+}
+
+.form-control.bg-dark::placeholder {
+  color: #adb5bd;
+  opacity: 1;
+}
+
+.contact .section-title::after {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  right: 0;
+  width: 70%;
+  height: 0.5px;
+  background-color: #eeeeee7d;
+}
+
+@media screen and (min-width: 992px) {
+  .contact .section-title::after {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact .section-title::after {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .contact .section-title::after {
+    width: 75%;
+  }
+}
