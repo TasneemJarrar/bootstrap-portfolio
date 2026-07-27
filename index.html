@@ -24,15 +24,15 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg position-sticky top-0 z-3">
     <div class="container">
-      <a class="navbar-brand fs-5 developer-font" href="#">tasneem@~/portfolio main $</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      <a class="navbar-brand fs-5 developer-font" href="#">tasneem@~/portfolio <span class="text-info d-none d-sm-inline">main $</span></a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#hero">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#skills">Skills</a>
@@ -51,13 +51,13 @@
 
 
   <main class="bg-dark text-light">
-    <section class="hero py-5">
+    <section id="hero" class="hero py-5">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 col-12 order-1">
             <div class="d-flex flex-column justify-content-center align-items-center gap-4">
               <div class="info d-flex flex-column justify-content-center align-items-center">
-                <p class="developer-font">Tasneem Jarrar</p>
+                <p class="developer-font fs-2">Tasneem Jarrar</p>
                 <a href="https://github.com/whiteSHADOW1234/TypingSVG"><img
                     src="https://typingsvg.vercel.app/api/svg?width=300&height=50&backgroundColor=%23212529&backgroundOpacity=0&center=true&border=false&deletionBehavior=clear&lines=%5B%7B%22text%22%3A%22FRONTEND+DEVELOPER+%22%2C%22font%22%3A%22JetBrains+Mono%22%2C%22color%22%3A%22%230dcaf0%22%2C%22fontSize%22%3A16%7D%2C%7B%22text%22%3A%22BUILDING+CLEAN%2C+FUNCTIONAL+WEB+EXPERIENCES%22%2C%22font%22%3A%22JetBrains+Mono%22%2C%22color%22%3A%22%230dcaf0%22%2C%22fontSize%22%3A17%7D%5D"
                     alt="Typing SVG" /></a>
@@ -157,7 +157,7 @@
       </div>
     </section>
 
-    <section class="skills py-5 ">
+    <section id="skills" class="skills py-5 ">
       <div class="container">
         <h2 class="section-title fs-6 developer-font position-relative mb-5">Tech Stack</h2>
         <div class="skills">
@@ -290,7 +290,7 @@
       </div>
     </section>
 
-    <section class="projects py-5">
+    <section id="projects" class="projects py-5">
       <div class="container">
         <h2 class="section-title fs-6 developer-font position-relative mb-5">Projects</h2>
         <div class="projects-cards">
@@ -373,19 +373,21 @@
       </div>
     </section>
 
-    <section class="contact py-5">
+    <section id="contact" class="contact py-5">
       <div class="container">
         <h2 class="section-title fs-6 developer-font position-relative mb-5">Get In Touch</h2>
         <div class="form-wrapper bg-skills p-5 rounded-5 border border-1 mx-auto">
           <form class="contactForm developer-font d-flex flex-column gap-3">
             <div class="mb-3">
               <label for="name" class="form-label small">_name</label>
-              <input type="text" class="form-control bg-dark text-light py-3 border-0" id="name" placeholder="Your Name" required>
+              <input type="text" class="form-control bg-dark text-light py-3 border-0" id="name" placeholder="Your Name"
+                required>
             </div>
 
             <div class="mb-3">
               <label for="email" class="form-label">_email</label>
-              <input type="email" class="form-control bg-dark text-light py-3 border-0" id="email" placeholder="email@example.com" required>
+              <input type="email" class="form-control bg-dark text-light py-3 border-0" id="email"
+                placeholder="email@example.com" required>
             </div>
 
             <div class="mb-3">
@@ -400,9 +402,43 @@
     </section>
   </main>
 
-  <footer>
+  <footer class="bg-black shadow-lg developer-font small py-3">
     <div class="container">
+      <div class="row g-2">
+        <div class="col-12">
+          <div class="links d-flex gap-5 justify-content-center align-items-center">
+            <a href="https://github.com/TasneemJarrar" class="d-flex gap-1 muted text-decoration-none">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path fill="#86878a"
+                  d="M8 17.308L2.692 12L8 6.692l.714.714l-4.6 4.6L8.708 16.6zm8 0l-.713-.714l4.6-4.6L15.292 7.4L16 6.692L21.308 12z" />
+              </svg>
+              GitHub
+            </a>
 
+            <a href="www.linkedin.com/in/tasneem-jarrar" class="d-flex gap-1 muted text-decoration-none">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path fill="#86878a"
+                  d="M5 7h3V5l2-2h3l2 2v2h3a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3v-8a3 3 0 0 1 3-3m5.41-3L9 5.41V7h5V5.41L12.59 4zM5 8a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h13a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2z" />
+              </svg>
+              LinkedIn
+            </a>
+
+            <a href="" class="d-flex gap-1 muted text-decoration-none">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path fill="#86878a" fill-rule="evenodd"
+                  d="m4.2 5.2l7.56 5.67a.4.4 0 0 0 .48 0L19.8 5.2zm16.6.75l-7.84 5.88a1.6 1.6 0 0 1-1.92 0L3.2 5.95V18.8h17.6zM3 4h18a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1" />
+              </svg>
+              Email
+            </a>
+          </div>
+        </div>
+        <div class="col-12 d-flex justify-content-center">
+          <p class="muted text-center">© 2024 Alex Rivera. Built with precision and a cup of coffee.</p>
+        </div>
+      </div>
     </div>
   </footer>
 
